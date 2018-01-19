@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<!-- Head -->
+<head>
+    <title></title>
+    <link rel ="icon" href="images\jyo.jpg">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- Body -->
+<body>
+<div class="col-1">
+    <div class="col-3" style="border:1px solid #ddd; box-shadow:3px 3px 3px #ddd;padding-bottom: 30% " id="demo">
+        <div class="img">
+        <img src="images/sin.jpg">
+        <div class="img-name">
+        <h2>SINDHU NAGADURGA</h2>
+    </div>
+</div>
+<script>
+
+    /* Profile Data */
+var sindhu = { 
+    "role" : "Trainercum&Developer", 
+    "email":"ndsindhu.c@apssdc.in",
+    "location" : "Vijayawada, Andhra Pradesh",
+    "mobile":"(+91) 0001112222",
+};
+
+
+
+/* Qualifications */
+var ed={
+"degree" : ["B-Tech(C.S.E)","Inter","SSC"],
+"NameofColl" : ["Sri Vasavi Institute of Engineering and Technology", "R.K junior college","KommaReddy Talent High School"],
+"location" : ["Machilipatnam, Andhra Pradesh","Machilipatanam, Andhra Pradesh","Machilipatanam, Andhra Pradesh"]
+}
+
+for (x in sindhu) {
+    document.getElementById("demo").innerHTML += "<p>" +sindhu[x]+"<p>";
+}
+</script>
+<hr>
+
+<!-- Skills -->
+<h1> Skills </h1>
+<h3>HTML</h3>
+
+<h3>CSS</h3>
+
+<h3>JAVASCRIPT</h3>
+
+
+</div>
+<!-- Educational Qualifications-->
+<div class="col-4" style="box-shadow:3px 3px 3px #ddd  ; margin-left: 2%">
+    <h1>Qualifications </h1>
+    <div id="ed">
+        <script>
+            for(i in ed.degree){
+    document.getElementById('ed').innerHTML+="<b>"+ed.degree[i]+"</b><br>";
+    document.getElementById('ed').innerHTML+=ed.NameofColl[i]+"<br>";
+    document.getElementById('ed').innerHTML+=ed.location[i]+"<br><br>";  
+            }
+        </script>
+    </div>
+    
+</div>
+<!-- Acheivements-->
+<div class="col-4" style="box-shadow:3px 3px 3px #ddd; margin-left: 2%">
+        <h1> Acheivements </h1>
+        <div>
+    <ul>
+        <li><h2>First Prize Winner in several Throw Ball and Ball Badminton Competitions at College</h2>
+        <p>Sri Vasavi Institute of Engineering and Technology | MTM.</p> </li>
+    </ul>
+</div>
+</div>
+
+<!-- Seminars/workshops-->
+<div class="col-4" style="box-shadow:3px 3px 3px #ddd; margin-left: 2%">
+      <h1> Seminars/Workshops </h1>
+       <div>
+        
+          <h3> <i class="fa fa-paper-plane" aria-hidden="true"></i> Workshop | Ethical Hacking |  Sviet .</h3>
+     </div>
+</div>
+<!--Technical Seminar-->
+<div class="col-4" style="box-shadow:3px 3px 3px #ddd; margin-left: 2%">
+      <h1> Techinical Seminar </h1>
+       <div>
+        
+          <h2> Title: MEMS Technology | 2016</h2>
+          <h3>Description</h3>
+          <p>technology used to prevent from accidents with the help of airbags using some sensors.</p></div>
+ </div>
+
+     <div class="col-4" style="box-shadow:3px 3px 3px #ddd; margin-left: 2%">
+      <h1> DECLARATION </h1>
+      <p>I do here by declare that the particulars of information and facts stated here and above are true and complete to the best of my knowledge and belief. </p>
+
+</div>
+</div>
+</body>
+</html>
