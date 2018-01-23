@@ -1,51 +1,33 @@
-#ju{
-    text-align:center;
-}
-
-.sdc{
+.container{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 	padding:0.2%;
 	margin:1%;
+    padding-top: 2%;
+    border: 2px solid black
+    
 }
-.sdc>div{
+.container>div{
 	padding: 0.1%;
     margin:1%;
 }
 
-.sol-3{width:10%;}
-[class*="sol-"]{
+.col-3{width:10%;}
+[class*="col-"]{
 	float:center;
 }
-.cd {
+.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
     text-align: center;
 }
-
-
-
-button {
-    border: none;
-    outline: 0;
-    padding: 8px;
-    color:green;
-    background-color: #A0A098;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
-
-
-button:hover{
-    opacity: 0.7;
+a{
+    text-decoration:none;
 }
 @media only screen and (max-width: 500px) {
-	
 }
 
 img {
@@ -55,60 +37,43 @@ img {
 
 .col-1{width:100%;}
 .col-2{width:30%;}
-.col-3{width:25%;}
-.col-4{width:70%;}
+.col-3{
+    width:25%;
+    border:1px solid #ddd; 
+    box-shadow:3px 3px 3px #ddd;
+    padding-bottom: 30% 
+}
+.col-4{width:70%;
+ box-shadow:3px 3px 3px #ddd;
+ margin-left: 2%
+ }
 .col-5{width:10%;}
 
 [class*="col-"]{
     float:left;
+
 }
 p
  {
- font-weight: 500;
- font-size:18px;
+ font-weight:500;
+ font-size:16px;
  display:block;
  text-align:left;
  margin:2%;
  }
-.img{ 
-    width:100%;
-    height:auto
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    float: left;
-    overflow: hidden;
-    position: relative;;
- }
-.img-name {
-  position: absolute;
-  width: 100%;
-  bottom: 2%;
-  text-align: center;
-  background-color: #5B1D1D;
-  color:#fff;
-}
-.scontainer{
-    width:100%;
-    background:#ddd;
-
-}
-.skil{
-    width:100%;
-    text-align:right;
-    line-height:20px;
-    color:#5B1D1D  ;
-}
-
 
 @media only screen and (max-width:768px){
     [class*="col-"]{
         width:100%;
     }
 }
-h1{
-    background:#5B1D1D ;
-    color:#fff;
+h2{
     padding:1%;
     width:90%;
     box-shadow:3px 3px 3px #ddd;
 }
+h1{
+   width:90%;
+    box-shadow:3px 3px 3px #ddd; 
+}
+
