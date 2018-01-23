@@ -6,100 +6,103 @@
     <link rel ="icon" href="images\jyo.jpg">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
 <!-- Body -->
 <body>
 <div class="col-1">
-    <div class="col-3" style="border:1px solid #ddd; box-shadow:3px 3px 3px #ddd;padding-bottom: 20% " id="demo">
-        <div class="img">
-        <img src="images/jyo.jpg">
-        <div class="img-name">
-        <h2>Nagajyothi</h2>
-    </div>
-</div>
-<script>
-
-    /* Profile Data */
-var nagajyothi = { 
-    "role" : "Trainercum&Developer", 
-    "email":"nagajyothi.thotam@gmail.com",
-    "location" : "Vijayawada, Andhra Pradesh",
-    "mobile":"(+91) 9705100817",
-};
-
-
-
-/* Qualifications */
-var ed={
-"degree" : ["B-Tech(C.S.E)","Inter","SSC"],
-"NameofColl" : ["Siddartha institute of science and technology", "S.V junior college","Victory High School"],
-"location" : ["Puttur, Andhra Pradesh","Rlykodur, Andhra Pradesh","Rlykodur, Andhra Pradesh"]
-}
-
-for (x in nagajyothi) {
-    document.getElementById("demo").innerHTML += "<p>" +nagajyothi[x]+"<p>";
-}
-</script>
-<hr>
-
-<!-- Skills -->
-<h1> Skills </h1>
-<h3>HTML</h3>
-
-<h3>CSS</h3>
-
-<h3>JAVASCRIPT</h3>
-
-
-</div>
-<!-- Educational Qualifications-->
-<div class="col-4" style="box-shadow:3px 3px 3px #ddd  ; margin-left: 2%">
-    <h1>Qualifications </h1>
-    <div id="ed">
+    <div class="col-3">
+        <div class="img" id="details">
+          <img src="images/jyo.jpg">
+          <h3 align="center">Nagajyothi</h3>
+        </div> 
         <script>
-            for(i in ed.degree){
-    document.getElementById('ed').innerHTML+="<b>"+ed.degree[i]+"</b><br>";
-    document.getElementById('ed').innerHTML+=ed.NameofColl[i]+"<br>";
-    document.getElementById('ed').innerHTML+=ed.location[i]+"<br><br>";  
+
+          /* Profile Data */
+           var nagajyothi = { 
+              "role" : "Trainer cum Developer", 
+              "email":"nagajyothi.thotam@gmail.com",
+              "location" : "Vijayawada, Andhra Pradesh",
+              "mobile":"(+91) 9705100817",
+            };
+
+                /* Qualifications */
+           var education ={
+              "Qualification" : ["B-Tech(C.S.E)","Inter","SSC"],
+              "NameofInstitution" : ["Siddartha institute of science and technology", "S.V junior college","Victory High School"],
+              "Area" : ["Puttur, Andhra Pradesh","Rlykodur, Andhra Pradesh","Rlykodur, Andhra Pradesh"]
+              }
+
+             document.getElementById("details").innerHTML += "<p>" +nagajyothi["role"]+"<p>";
+             document.getElementById("details").innerHTML += "<p>" +nagajyothi["email"]+"<p>";
+             document.getElementById("details").innerHTML += "<p>" +nagajyothi["location"]+"<p>";
+             document.getElementById("details").innerHTML += "<p>" +nagajyothi["mobile"]+"<p>";
+        </script>
+       <hr>
+
+         <!--skills known  -->
+         <h2> SKILLS </h2>
+         <ul>
+         <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVASCRIPT</li>
+    </div>
+          <!-- Educational Qualifications-->
+     <div class="col-4">
+        <h2>EDUCATION</h2>
+      <div id="education">
+        <script>
+            for(i in education.Qualification){
+              document.getElementById("education").innerHTML+="<b>"+education.Qualification[i]+"</b><br>";
+              document.getElementById("education").innerHTML+=education.NameofInstitution[i]+"<br>";
+               document.getElementById("education").innerHTML+=education.Area[i]+"<br><br>";  
             }
         </script>
-    </div>
+      </div>
     
 </div>
 <!-- Acheivements-->
-<div class="col-4" style="box-shadow:3px 3px 3px #ddd; margin-left: 2%">
-        <h1> Acheivements </h1>
+<div class="col-4">
+        <h2> ACHIEVEMENTS </h2>
         <div>
-    <ul>
-        <li><h2> Merit Certificate (1st prize)| Technical event: CYBRUS &#39 17</h2>
-        <p>Siddartha Institute of Science and Technology | Tirupathi |4th April 2017.</p> </li>
-    </ul>
-</div>
+          <p> Merit Certificate (1st prize)| Technical event: CYBRUS &#39 17 at Siddartha Institute of Science and Technology | Tirupathi  |4th April 2017.</p> 
+        </div>
 </div>
 
-<!-- Seminars/workshops-->
-<div class="col-4" style="box-shadow:3px 3px 3px #ddd; margin-left: 2%">
-      <h1> Seminars/Workshops </h1>
+<!--workshops-->
+<div class="col-4">
+      <h2> WORKSHOPS </h2>
        <div>
         
-          <h3> <i class="fa fa-paper-plane" aria-hidden="true"></i> Workshop | Android App Development | Technophobia Systems | Sri Sai Institute of Technology and Science | 27th & 28th October 2014.</h3>
+          <p> Workshop | Android App Development | Technophobia Systems | Sri Sai Institute of Technology and Science | 27th & 28th October 2014.</p>
      </div>
 </div>
 <!--Technical Seminar-->
-<div class="col-4" style="box-shadow:3px 3px 3px #ddd; margin-left: 2%">
-      <h1> Techinical Seminar </h1>
+<div class="col-4">
+      <h2> TECHNICAL SEMINAR </h2>
        <div>
         
-          <h2> Title: Apple Talk | 2017</h2>
-          <h3>Description</h3>
+          <p><b> Title: Apple Talk | 2017<b></p>
+          <h4>&nbsp &nbsp Description</h4>
           <p> AppleTalk is a network operating system designed to connect Apple Computers. Its components are built on Macintosh operating systems. This mechanism uses of CSMA/CA a media access control method.  And AppleShare is used as the file and print sharing protocol on AppleTalk networks.</p>
      </div>
  </div>
+ <div class="col-4">
+  <h2>PERSONAL INFORMATION</h2>
+    <div>
+       <p>
+       Name                 :  T. Naga Jyothi.</br>
+       Father’s Name        :  T. Venkat Ramana.</br>
+       Languages Known      :  Telugu, English, Hindi.</br>
+       Hobbies/Interests    :  Sports, Gardening, learning from Internet.</br>
+       Address              :  TPT</br>
+     </p>
+    </div>
+</div>    
 
-     <div class="col-4" style="box-shadow:3px 3px 3px #ddd; margin-left: 2%">
-      <h1> DECLARATION </h1>
+     <div class="col-4">
+      <h2> DECLARATION </h2>
       <p>I do here by declare that the particulars of information and facts stated here and above are true and complete to the best of my knowledge and belief. </p>
 
 </div>
