@@ -3,105 +3,106 @@
 <!-- Head -->
 <head>
     <title></title>
-    <link rel ="icon" href="images\jyo.jpg">
+    <link rel ="icon" href="images\sin.jpg">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<!-- Body -->
+   <!-- Body -->
 <body>
 <div class="col-1">
-    <div class="col-3" style="border:1px solid #ddd; box-shadow:3px 3px 3px #ddd;padding-bottom: 30% " id="demo">
+    <div class="col-3" id="details">
         <div class="img">
         <img src="images/sin.jpg">
-        <div class="img-name">
-        <h2>SINDHU NAGADURGA</h2>
+        <h3 align="center">SINDHU NAGADURGA</h3>
     </div>
-</div>
 <script>
 
-    /* Profile Data */
-var sindhu = { 
-    "role" : "Trainercum&Developer", 
+    /* details */
+  var sindhu = { 
+    "role" : "Trainer cum Developer", 
     "email":"ndsindhu.c@apssdc.in",
     "location" : "Vijayawada, Andhra Pradesh",
     "mobile":"(+91) 0001112222",
-};
+  };
 
 
+  /* Qualifications */
+   var education={
+    "Qualification" : ["B-Tech(C.S.E)","Inter","SSC"],
+    "NameofInstitution" : ["Sri Vasavi Institute of Engineering and Technology", "R.K junior college","KommaReddy Talent High School"],
+    "Area" : ["Machilipatnam, Andhra Pradesh","Machilipatanam, Andhra Pradesh","Machilipatanam, Andhra Pradesh"]
+    }
+             document.getElementById("details").innerHTML += "<p>" +sindhu["role"]+"<p>";
+             document.getElementById("details").innerHTML += "<p>" +sindhu["email"]+"<p>";
+             document.getElementById("details").innerHTML += "<p>" +sindhu["location"]+"<p>";
+             document.getElementById("details").innerHTML += "<p>" +sindhu["mobile"]+"<p>";
 
-/* Qualifications */
-var ed={
-"degree" : ["B-Tech(C.S.E)","Inter","SSC"],
-"NameofColl" : ["Sri Vasavi Institute of Engineering and Technology", "R.K junior college","KommaReddy Talent High School"],
-"location" : ["Machilipatnam, Andhra Pradesh","Machilipatanam, Andhra Pradesh","Machilipatanam, Andhra Pradesh"]
-}
-
-for (x in sindhu) {
-    document.getElementById("demo").innerHTML += "<p>" +sindhu[x]+"<p>";
-}
 </script>
 <hr>
-
-<!-- Skills -->
-<h1> Skills </h1>
-<h3>HTML</h3>
-
-<h3>CSS</h3>
-
-<h3>JAVASCRIPT</h3>
-
+<!-- Skills Known -->
+ <h2> SKILLS </h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+    <li>Java SE</li>
+    <li>Intrenship at WINNERVE Info Services pvt ltd, worked on Java Technology.</li>
+  </ul>
 
 </div>
 <!-- Educational Qualifications-->
-<div class="col-4" style="box-shadow:3px 3px 3px #ddd  ; margin-left: 2%">
-    <h1>Qualifications </h1>
-    <div id="ed">
+<div class="col-4">
+    <h2>EDUCATION</h2>
+    <div id="education">
         <script>
-            for(i in ed.degree){
-    document.getElementById('ed').innerHTML+="<b>"+ed.degree[i]+"</b><br>";
-    document.getElementById('ed').innerHTML+=ed.NameofColl[i]+"<br>";
-    document.getElementById('ed').innerHTML+=ed.location[i]+"<br><br>";  
+            for(i in education.Qualification){
+              document.getElementById('education').innerHTML+="<b>"+education.Qualification[i]+"</b><br>";
+             document.getElementById('education').innerHTML+=education.NameofInstitution[i]+"<br>";
+             document.getElementById('education').innerHTML+=education.Area[i]+"<br><br>";  
             }
         </script>
     </div>
     
 </div>
-<!-- Acheivements-->
-<div class="col-4" style="box-shadow:3px 3px 3px #ddd; margin-left: 2%">
-        <h1> Acheivements </h1>
+<!-- Other Activities-->
+<div class="col-4">
+        <h2>OTHER ACTIVITIES</h2>
         <div>
-    <ul>
-        <li><h2>First Prize Winner in several Throw Ball and Ball Badminton Competitions at College</h2>
-        <p>Sri Vasavi Institute of Engineering and Technology | MTM.</p> </li>
-    </ul>
-</div>
+          <ul>
+            <li>First Prize Winner in several Throw Ball and Ball Badminton Competitions at College</li>
+            <li>Participated in many social activity camps through NSS.</li>
+            <li>Organised , as part of organising teams ,many cultural events at college.</li>
+          </ul>
+       </div>
 </div>
 
 <!-- Seminars/workshops-->
-<div class="col-4" style="box-shadow:3px 3px 3px #ddd; margin-left: 2%">
-      <h1> Seminars/Workshops </h1>
+<div class="col-4">
+      <h2> SEMINARS/WORKSHOPS </h2>
        <div>
-        
-          <h3> <i class="fa fa-paper-plane" aria-hidden="true"></i> Workshop | Ethical Hacking |  Sviet .</h3>
-     </div>
+         <p><b>Title: MEMS Technology</b></p>
+        <ul>
+          <li>Technology used to prevent from accidents with the help of airbags using some sensors.</li>
+          <li>The airbags in it contains nitrogen gas.</li>
+          <li>Participated in a workshop on "Ethical Hacking".</li>
+        </ul> 
+       </div>
 </div>
-<!--Technical Seminar-->
-<div class="col-4" style="box-shadow:3px 3px 3px #ddd; margin-left: 2%">
-      <h1> Techinical Seminar </h1>
-       <div>
-        
-          <h2> Title: MEMS Technology | 2016</h2>
-          <h3>Description</h3>
-          <p>technology used to prevent from accidents with the help of airbags using some sensors.</p></div>
- </div>
-
-     <div class="col-4" style="box-shadow:3px 3px 3px #ddd; margin-left: 2%">
-      <h1> DECLARATION </h1>
+<div class="col-4">
+    <h2>PERSONAL INFORMATION</h2>
+    <div>
+       <p class="pp">
+       Name                 :  CH. Sindhu NagaDurga.</br>
+       Father’s Name        :  CH. Samudraiah.</br>
+       Languages Known      :  Telugu, English, Hindi.</br>
+       Hobbies/Interests    :  Sports, Gardening, learning from Internet.</br>
+       Address              :  MTM</br>
+     </p>
+    </div>
+</div>    
+     <div class="col-4">
+      <h2>DECLARATION</h2>
       <p>I do here by declare that the particulars of information and facts stated here and above are true and complete to the best of my knowledge and belief. </p>
-
-</div>
+    </div>
 </div>
 </body>
 </html>
